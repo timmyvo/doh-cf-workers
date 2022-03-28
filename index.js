@@ -5,7 +5,7 @@ addEventListener('fetch', function(event) {
 })
 
 async function handleRequest(request) {
-    const doh = 'https://security.cloudflare-dns.com/dns-query'
+    const doh = 'https://140.238.202.136.sslip.io/dns-query'
     const contype = 'application/dns-message'
     const { method, headers, url } = request
     const { host, searchParams } = new URL(url)
